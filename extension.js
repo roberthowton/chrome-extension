@@ -1,7 +1,7 @@
 // extension.js
 // add extension code here
 
-let color = '#3aa757';
+let color = '#000';
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ color });
