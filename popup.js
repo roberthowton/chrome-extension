@@ -26,17 +26,14 @@ function revert() {
 // current page
 function setPageBackgroundImage() {
   let elements = document.getElementsByTagName("*");
-
+  const regex = /Hack Reactor|App Academy|Flatiron School|Fullstack Academy|Full Stack|Fullstack|General Assembly|Grace Hopper Academy|Metis|Thinkful|Nucamp|Galvanize|BrainStation|Product Gym|Alchemy Code Lab|Grace Hopper Program|NYC Data Science Academy|Lambda School/gi;
   for (let i = 0; i < elements.length; i++) {
     let el = elements[i];
     for (let j = 0; j < el.childNodes.length; j++) {
       let node = el.childNodes[j];
       if (node.nodeType === 3) {
         let text = node.nodeValue;
-        let replaced = text.replace(
-          /Hack Reactor|App Academy|Flatiron|Fullstack Academy|Tech Elevator/gi,
-          "Not Codesmith"
-        );
+        let replaced = text.replace(regex, "Codesmith");
         if (replaced !== text)
           el.replaceChild(document.createTextNode(replaced), node);
       }
