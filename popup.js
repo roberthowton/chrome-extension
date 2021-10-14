@@ -26,7 +26,8 @@ function revert() {
 // current page
 function setPageBackgroundImage() {
   let elements = document.getElementsByTagName("*");
-  const regex = /Hack Reactor|App Academy|Flatiron School|Fullstack Academy|Full Stack|Fullstack|General Assembly|Grace Hopper Academy|Metis|Thinkful|Nucamp|Galvanize|BrainStation|Product Gym|Alchemy Code Lab|Grace Hopper Program|NYC Data Science Academy|Lambda School/gi;
+  const regex =
+    /Hack\sReactor|Codeup|Code\sChrysalis|Code Platoon|Epicodus|Hacktiv8|Launch\sAcademy|Turing\sSchool|The\sTech\sAcademy|Juno\sCollege\sof\sTechnology|Tech\sElevator|App\sAcademy|Flatiron\sSchool|Fullstack\sAcademy|Full\sStack|Fullstack|General\sAssembly|Grace\sHopper\sAcademy|Metis|Thinkful|Nucamp|Galvanize|BrainStation|Product\sGym|Alchemy\sCode\sLab|Grace\sHopper\sProgram|NYC\sData\sScience\sAcademy|Lambda\sSchool/gi;
   for (let i = 0; i < elements.length; i++) {
     let el = elements[i];
     for (let j = 0; j < el.childNodes.length; j++) {

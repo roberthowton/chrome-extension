@@ -21,12 +21,12 @@ for (let i = 0; i < images.length; i++) {
   images[i].src = "https://static.frontendmasters.com/assets/teachers/sentance/thumb@2x.jpg";
 }
 
-// for (let i = 0; i < elements.length; i++) {
-//   if (elements[i].style.backgroundImage) {
-//     elements[i].style.backgroundImage = 'url("https://static.frontendmasters.com/assets/teachers/sentance/thumb@2x.jpg")'; 
-//   }
-//   if (elements[i].style.backgroundColor) {
-//     elements[i].style.backgroundImage = 'url("https://static.frontendmasters.com/assets/teachers/sentance/thumb@2x.jpg")'; 
-//   }
-// }
+for (let i = 0; i < elements.length; i++) {
+  if (elements[i].style.backgroundImage) {
+    elements[i].style.backgroundImage = 'url("https://static.frontendmasters.com/assets/teachers/sentance/thumb@2x.jpg")'; 
+  }
+  if (elements[i].style.backgroundColor) {
+    elements[i].style.backgroundImage = 'url("https://static.frontendmasters.com/assets/teachers/sentance/thumb@2x.jpg")'; 
+  }
+}
 
