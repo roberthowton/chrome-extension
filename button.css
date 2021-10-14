@@ -1,3 +1,8 @@
+body {
+  background-color: #282828;
+  color: whitesmoke;
+}
+
 button {
   height: 30px;
   width: 30px;
@@ -5,6 +10,7 @@ button {
   margin: 10px;
   border: none;
   border-radius: 2px;
+  background-image: url("images/sentance32.png")
 }
 
 button.current {

@@ -6,7 +6,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting", "management"],
   "action": {
     "default_popup": "popup.html",
      "default_icon": {
@@ -15,11 +15,6 @@
       "48": "/images/sentance48.png"
     }
   },
-  "content_scripts": [{
-    "matches": ["<all_urls>"],
-    "all_frames": true,
-    "js": ["content-script.js"]
-  }],
   "icons": {
     "16": "/images/sentance16.png",
     "32": "/images/sentance32.png",
